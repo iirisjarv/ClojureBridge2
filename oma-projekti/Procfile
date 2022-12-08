@@ -1,0 +1,1 @@
+web: java $JVM_OPTS -cp target/oma-projekti.jar clojure.main -m oma-projekti.server

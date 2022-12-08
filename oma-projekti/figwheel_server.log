@@ -1,0 +1,348 @@
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.9 seconds.
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target\cljsbuild\public\js\out\oma_projekti\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.796 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\oma_projekti\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.853 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\oma_projekti\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.843 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\oma_projekti\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+----  Compiler Warning on   src/cljs/oma_projekti/core.cljs   line:66  column:34  ----
+
+  Use of undeclared Var oma-projekti.core/send-request
+
+  62             [:p [:input {:type :text 
+  63                          :value @text
+  64                          :on-change #(reset! text (.-value (.-target %)))}]]
+  65             [:button {:type "submit"
+  66                       :on-click #(send-request @text)} "Klikkaa!"]]]))
+                                       ^--- Use of undeclared Var oma-projekti.core/send-request
+  67  
+  68  
+  69  ;; -------------------------
+  70  ;; Translate routes -> page components
+
+----  Compiler Warning : Please see src/cljs/oma_projekti/core.cljs  ----
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.804 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\oma_projekti\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.795 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\oma_projekti\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.801 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\oma_projekti\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.83 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\oma_projekti\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+----  Compiler Warning on   src/cljs/oma_projekti/core.cljs   line:68  column:38  ----
+
+  Use of undeclared Var oma-projekti.core/choice
+
+  64  [:form {:on-submit #(.preventDefault %)}
+  65   [:p [:input {:type :text 
+  66                :value @text
+  67                :on-change #(reset! text (.-value (.-target %)))}]]
+  68  [:div {:on-change #(reset! choice (.-value (.-target)))}
+                                 ^--- Use of undeclared Var oma-projekti.core/choice
+  69   [:div [:label [:input {:type :radio :name "case" :value :lower}] "pienella"]]
+  70   [:div [:label [:input {:type :radio :name "case" :value :upper}] "isolla"]]]
+  71   [:button {:type "submit"
+  72             :on-click #(send-request @text)} "Klikkaa!"]]
+  73  [:h2 "Teksti on: " @text]]))
+
+----  Compiler Warning : Please see src/cljs/oma_projekti/core.cljs  ----
+Failed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.466 seconds.
+----  Could not Analyze  src/cljs/oma_projekti/core.cljs   line:68  column:54  ----
+
+  Unknown dot form of (. nil -target nil) with classification [:cljs.analyzer/error :cljs.analyzer/property ()]
+
+  66                :value @text
+  67                :on-change #(reset! text (.-value (.-target %)))}]]
+  68  [:div {:on-change #(reset! choice (.-value (.-target)))}
+                                                 ^--- Unknown dot form of (. nil -target nil) with classification [:cljs.analyzer/error :cljs.analyzer/property ()]
+  69   [:div [:label [:input {:type :radio :name "case" :value :lower}] "pienella"]]
+  70   [:div [:label [:input {:type :radio :name "case" :value :upper}] "isolla"]]]
+  71   [:button {:type "submit"
+
+----  Analysis Error : Please see src/cljs/oma_projekti/core.cljs  ----
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+----  Compiler Warning on   src/cljs/oma_projekti/core.cljs   line:68  column:38  ----
+
+  Use of undeclared Var oma-projekti.core/choice
+
+  64  [:form {:on-submit #(.preventDefault %)}
+  65   [:p [:input {:type :text 
+  66                :value @text
+  67                :on-change #(reset! text (.-value (.-target %)))}]]
+  68  [:div {:on-change #(reset! choice (.-value (.-target)))}
+                                 ^--- Use of undeclared Var oma-projekti.core/choice
+  69   [:div [:label [:input {:type :radio :name "case" :value :lower}] "pienella"]]
+  70   [:div [:label [:input {:type :radio :name "case" :value :upper}] "isolla"]]]
+  71   [:button {:type "submit"
+  72             :on-click #(send-request @text)} "Klikkaa!"]]
+  73  [:h2 "Teksti on: " @text]]))
+
+----  Compiler Warning : Please see src/cljs/oma_projekti/core.cljs  ----
+Failed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 0.445 seconds.
+----  Could not Analyze  src/cljs/oma_projekti/core.cljs   line:68  column:54  ----
+
+  Unknown dot form of (. nil -target nil) with classification [:cljs.analyzer/error :cljs.analyzer/property ()]
+
+  66                :value @text
+  67                :on-change #(reset! text (.-value (.-target %)))}]]
+  68  [:div {:on-change #(reset! choice (.-value (.-target)))}
+                                                 ^--- Unknown dot form of (. nil -target nil) with classification [:cljs.analyzer/error :cljs.analyzer/property ()]
+  69   [:div [:label [:input {:type :radio :name "case" :value :lower}] "pienella"]]
+  70   [:div [:label [:input {:type :radio :name "case" :value :upper}] "isolla"]]]
+  71   [:button {:type "submit"
+
+----  Analysis Error : Please see src/cljs/oma_projekti/core.cljs  ----
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Failed to compile build :app from ["src/cljs" "src/cljc" "env/dev/cljs"] in 1.25 seconds.
+----  Could not Analyze  src/cljs/oma_projekti/core.cljs   line:70  column:54  ----
+
+  Unknown dot form of (. nil -target nil) with classification [:cljs.analyzer/error :cljs.analyzer/property ()]
+
+  68                :value @text
+  69                :on-change #(reset! text (.-value (.-target %)))}]]
+  70  [:div {:on-change #(reset! choice (.-value (.-target)))}
+                                                 ^--- Unknown dot form of (. nil -target nil) with classification [:cljs.analyzer/error :cljs.analyzer/property ()]
+  71   [:div [:label [:input {:type :radio :name "case" :value :lower}] "pienella"]]
+  72   [:div [:label [:input {:type :radio :name "case" :value :upper}] "isolla"]]]
+  73   [:button {:type "submit"
+
+----  Analysis Error : Please see src/cljs/oma_projekti/core.cljs  ----
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.448 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\oma_projekti\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+----  Compiler Warning on   src/cljs/oma_projekti/core.cljs   line:74  column:33  ----
+
+  Wrong number of args (2) passed to oma-projekti.core/send-request
+
+  70            [:div {:on-change #(reset! choice (.-value (.-target %)))}
+  71             [:div [:label [:input {:type :radio :name "case" :value :lower}] "pienella"]]
+  72             [:div [:label [:input {:type :radio :name "case" :value :upper}] "isolla"]]]
+  73             [:button {:type "submit"
+  74                       :on-click #(send-request @text @choice)} "Klikkaa!"]]
+                                      ^--- Wrong number of args (2) passed to oma-projekti.core/send-request
+  75            [:h2 "Teksti on: " @text]]))
+  76  
+  77  
+  78  ;; -------------------------
+  79  ;; Translate routes -> page components
+
+----  Compiler Warning : Please see src/cljs/oma_projekti/core.cljs  ----
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.832 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\oma_projekti\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.847 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\oma_projekti\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.8 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\oma_projekti\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+----  Compiler Warning on   src/cljs/oma_projekti/core.cljs   line:63  column:4  ----
+
+  Use of undeclared Var oma-projekti.core/go
+
+  59  (def choice (reagent/atom ""))
+  60  
+  61  (defn send-request [teksti valinta]
+  62    (println "Lähetit: " teksti "ja" valinta)
+  63    (go (let [response (<! (http/post "/formi" {:form-params {:teksti teksti
+         ^--- Use of undeclared Var oma-projekti.core/go
+  64                                                              :valinta valinta}
+  65                                                :type :json
+  66                                                :async? true}))]
+  67          (println response))))
+  68  (defn about-page []
+
+----  Compiler Warning : Please see src/cljs/oma_projekti/core.cljs  ----
+----  Compiler Warning on   src/cljs/oma_projekti/core.cljs   line:63  column:23  ----
+
+  Use of undeclared Var oma-projekti.core/<!
+
+  59  (def choice (reagent/atom ""))
+  60  
+  61  (defn send-request [teksti valinta]
+  62    (println "Lähetit: " teksti "ja" valinta)
+  63    (go (let [response (<! (http/post "/formi" {:form-params {:teksti teksti
+                            ^--- Use of undeclared Var oma-projekti.core/<!
+  64                                                              :valinta valinta}
+  65                                                :type :json
+  66                                                :async? true}))]
+  67          (println response))))
+  68  (defn about-page []
+
+----  Compiler Warning : Please see src/cljs/oma_projekti/core.cljs  ----
+----  Compiler Warning on   src/cljs/oma_projekti/core.cljs   line:63  column:27  ----
+
+  No such namespace: http, could not locate http.cljs, http.cljc, or JavaScript source providing "http"
+
+  59  (def choice (reagent/atom ""))
+  60  
+  61  (defn send-request [teksti valinta]
+  62    (println "Lähetit: " teksti "ja" valinta)
+  63    (go (let [response (<! (http/post "/formi" {:form-params {:teksti teksti
+                                ^--- No such namespace: http, could not locate http.cljs, http.cljc, or JavaScript source providing "http"
+  64                                                              :valinta valinta}
+  65                                                :type :json
+  66                                                :async? true}))]
+  67          (println response))))
+  68  (defn about-page []
+
+----  Compiler Warning : Please see src/cljs/oma_projekti/core.cljs  ----
+----  Compiler Warning on   src/cljs/oma_projekti/core.cljs   line:63  column:27  ----
+
+  Use of undeclared Var http/post
+
+  59  (def choice (reagent/atom ""))
+  60  
+  61  (defn send-request [teksti valinta]
+  62    (println "Lähetit: " teksti "ja" valinta)
+  63    (go (let [response (<! (http/post "/formi" {:form-params {:teksti teksti
+                                ^--- Use of undeclared Var http/post
+  64                                                              :valinta valinta}
+  65                                                :type :json
+  66                                                :async? true}))]
+  67          (println response))))
+  68  (defn about-page []
+
+----  Compiler Warning : Please see src/cljs/oma_projekti/core.cljs  ----
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.874 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\oma_projekti\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+----  Compiler Warning on   src/cljs/oma_projekti/core.cljs   line:63  column:4  ----
+
+  Use of undeclared Var oma-projekti.core/go
+
+  59  (def choice (reagent/atom ""))
+  60  
+  61  (defn send-request [teksti valinta]
+  62    (println "Lähetit: " teksti "ja" valinta)
+  63    (go (let [response (<! (http/post "/formi" {:form-params {:teksti teksti
+         ^--- Use of undeclared Var oma-projekti.core/go
+  64                                                              :valinta valinta}
+  65                                                :type :json
+  66                                                :async? true}))]
+  67          (println response))))
+  68  (defn about-page []
+
+----  Compiler Warning : Please see src/cljs/oma_projekti/core.cljs  ----
+----  Compiler Warning on   src/cljs/oma_projekti/core.cljs   line:63  column:23  ----
+
+  Use of undeclared Var oma-projekti.core/<!
+
+  59  (def choice (reagent/atom ""))
+  60  
+  61  (defn send-request [teksti valinta]
+  62    (println "Lähetit: " teksti "ja" valinta)
+  63    (go (let [response (<! (http/post "/formi" {:form-params {:teksti teksti
+                            ^--- Use of undeclared Var oma-projekti.core/<!
+  64                                                              :valinta valinta}
+  65                                                :type :json
+  66                                                :async? true}))]
+  67          (println response))))
+  68  (defn about-page []
+
+----  Compiler Warning : Please see src/cljs/oma_projekti/core.cljs  ----
+----  Compiler Warning on   src/cljs/oma_projekti/core.cljs   line:63  column:27  ----
+
+  No such namespace: http, could not locate http.cljs, http.cljc, or JavaScript source providing "http"
+
+  59  (def choice (reagent/atom ""))
+  60  
+  61  (defn send-request [teksti valinta]
+  62    (println "Lähetit: " teksti "ja" valinta)
+  63    (go (let [response (<! (http/post "/formi" {:form-params {:teksti teksti
+                                ^--- No such namespace: http, could not locate http.cljs, http.cljc, or JavaScript source providing "http"
+  64                                                              :valinta valinta}
+  65                                                :type :json
+  66                                                :async? true}))]
+  67          (println response))))
+  68  (defn about-page []
+
+----  Compiler Warning : Please see src/cljs/oma_projekti/core.cljs  ----
+----  Compiler Warning on   src/cljs/oma_projekti/core.cljs   line:63  column:27  ----
+
+  Use of undeclared Var http/post
+
+  59  (def choice (reagent/atom ""))
+  60  
+  61  (defn send-request [teksti valinta]
+  62    (println "Lähetit: " teksti "ja" valinta)
+  63    (go (let [response (<! (http/post "/formi" {:form-params {:teksti teksti
+                                ^--- Use of undeclared Var http/post
+  64                                                              :valinta valinta}
+  65                                                :type :json
+  66                                                :async? true}))]
+  67          (println response))))
+  68  (defn about-page []
+
+----  Compiler Warning : Please see src/cljs/oma_projekti/core.cljs  ----
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.872 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\oma_projekti\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+----  Compiler Warning on   target/cljsbuild/public/js/out/no/en/core.cljc   line:131  column:1  ----
+
+  parse-long already refers to: cljs.core/parse-long being replaced by: no.en.core/parse-long
+
+  127    "Parse `s` as a integer number."
+  128    [s]
+  129    (parse-number s #(#?(:clj Integer/parseInt :cljs js/parseInt) %1)))
+  130  
+  131  (defn parse-long
+       ^--- parse-long already refers to: cljs.core/parse-long being replaced by: no.en.core/parse-long
+  132    "Parse `s` as a long number."
+  133    [s]
+  134    (parse-number s #(#?(:clj Long/parseLong :cljs js/parseInt) %1)))
+  135  
+  136  (defn parse-double
+
+----  Compiler Warning : Please see target/cljsbuild/public/js/out/no/en/core.cljc  ----
+----  Compiler Warning on   target/cljsbuild/public/js/out/no/en/core.cljc   line:136  column:1  ----
+
+  parse-double already refers to: cljs.core/parse-double being replaced by: no.en.core/parse-double
+
+  132    "Parse `s` as a long number."
+  133    [s]
+  134    (parse-number s #(#?(:clj Long/parseLong :cljs js/parseInt) %1)))
+  135  
+  136  (defn parse-double
+       ^--- parse-double already refers to: cljs.core/parse-double being replaced by: no.en.core/parse-double
+  137    "Parse `s` as a double number."
+  138    [s]
+  139    (parse-number s #(#?(:clj Double/parseDouble :cljs js/parseFloat) %1)))
+  140  
+  141  (defn parse-float
+
+----  Compiler Warning : Please see target/cljsbuild/public/js/out/no/en/core.cljc  ----
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.425 seconds.
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target\cljsbuild\public\js\out\oma_projekti\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 1.139 seconds.
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target\cljsbuild\public\js\out\oma_projekti\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.962 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\oma_projekti\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.953 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\oma_projekti\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 2.312 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\oma_projekti\core.js
+Compiling build :app to "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...
+Successfully compiled build :app to "target/cljsbuild/public/js/app.js" in 0.93 seconds.
+notifying browser that file changed:  target\cljsbuild\public\js\out\oma_projekti\core.js
